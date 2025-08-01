@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const btn = document.querySelector("#btn");
-btn.addEventListener("click",showNumber());
+btn.addEventListener("click",showNumber);
 
 function showNumber(){
 const getDiv = document.querySelector("#output");
