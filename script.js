@@ -4,7 +4,7 @@ btn.addEventListener("onclick",showNumber());
 
 function showNumber(){
 const getDiv = document.querySelector("#output");
-const getInput = document.querySelector("#ip").value();
+const getInput = document.querySelector("#ip").value;
 	
 return new Promise(resolve => setTimeout(() => {
 	const toShow = resolve(`Result: ${getInput}`);
