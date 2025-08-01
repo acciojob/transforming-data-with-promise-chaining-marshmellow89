@@ -13,28 +13,36 @@ return new Promise(resolve => setTimeout(() => {
 	.then(num =>{
 		return new Promise(resolve =>{
 		setTimeout(() =>{
-			getDiv.textContent =`Result: ${num*2}`;
+			const results =num*2;
+			getDiv.textContent =`Result: ${results}`;
+			resolve(results);
 		},2000);
 	});
 			})
 	.then(num => {
 		return new Promise(resolve => {
 		setTimeout(() => {
-			getDiv.textContent =`Result: ${num-3}`;
+			const results = num-3;
+			getDiv.textContent =`Result: ${results}`;
+			resolve(results);
 		},1000);
 	});
 			})
 	.then( num => {
 		return new Promise(resolve => {
 		setTimeout(() => {
-			getDiv.textContent =`Result: ${num/2}`;
+			const results = num/2;
+			getDiv.textContent =`Result: ${results}`;
+			resolve(results);
 		},1000)
 	});
 		})
 	.then( num => {
 		return new Promise(resolve => {
 		setTimeout(() => {
+			const results = num+10;
 			getDiv.textContent =`Final Result: ${num+10}`;
+			resolve(results);
 		},1000)
 	});
 		});
